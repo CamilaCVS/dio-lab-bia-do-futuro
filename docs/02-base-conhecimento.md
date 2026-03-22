@@ -29,7 +29,7 @@ Retirei os produtos financeiros, pois a aplicação não recomendará nanhuma ca
 > Descreva como seu agente acessa a base de conhecimento.
 
 Existem duas possibilidades, injetar os dados no prompt(Ctrl + C, Ctrl + V) ou carregar os arquivos via código, como no exemplo abaixo:
-"""
+'''python
 import pandas as pd
 import json
 
@@ -40,7 +40,7 @@ transacoes = ps.read_csv('data/transacoes.csv')
 #JSONs
 with open('data/perfil_investidor.jason', 'r', encoding = 'utf-8') as f:
     perfil = json.load(f)
-"""
+'''
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
