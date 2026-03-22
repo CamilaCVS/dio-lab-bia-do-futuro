@@ -2,13 +2,11 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
-| Arquivo | Formato | Utilização no Agente |
+| Arquivo | Formato | Como o mIAjuda vai utilizar |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores e atender com maior precisão|
+| `historico_atendimento.csv` | CSV | Conhecendo o cliente para atender com maior precisão|
 | `perfil_investidor.json` | JSON | Verificar a frequencia em que o cliente faz algum investimento |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `transacoes.csv` | CSV | Analisar padrão de consumo do cliente |
 
 > [!TIP]
 > **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
@@ -19,7 +17,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-Retirei os produtos financeiros, pois a aplicação não recomendará nanhuma carteira de investimento ao cliente.
+Retirei os produtos financeiros, pois a aplicação não recomendará nenhuma carteira de investimento ao cliente.
 
 ---
 
@@ -29,18 +27,18 @@ Retirei os produtos financeiros, pois a aplicação não recomendará nanhuma ca
 > Descreva como seu agente acessa a base de conhecimento.
 
 Existem duas possibilidades, injetar os dados no prompt(Ctrl + C, Ctrl + V) ou carregar os arquivos via código, como no exemplo abaixo:
-'''python
+```python
 import pandas as pd
 import json
 
 #CSVs
 historico = pd.read_csv('data/historico_atendimento.csv')
-transacoes = ps.read_csv('data/transacoes.csv')
+transacoes = pd.read_csv('data/transacoes.csv')
 
 #JSONs
-with open('data/perfil_investidor.jason', 'r', encoding = 'utf-8') as f:
+with open('data/perfil_investidor.json', 'r', encoding = 'utf-8') as f:
     perfil = json.load(f)
-'''
+```
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
