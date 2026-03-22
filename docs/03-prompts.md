@@ -1,7 +1,7 @@
 # Prompts do Agente
 
 >[!TIP]
->**Prompt sugerido para est etapa:**
+>**Prompt sugerido para esta etapa:**
 >```
 >Crie um system prompt para um agente chamado "mIAjuda", um orientador fincanceiro.
 >Regras:
