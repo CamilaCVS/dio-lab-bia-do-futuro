@@ -6,9 +6,8 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
+| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores e atender com maior precisão|
+| `perfil_investidor.json` | JSON | Verificar a frequencia em que o cliente faz algum investimento |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
 
 > [!TIP]
@@ -20,7 +19,7 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-[Sua descrição aqui]
+Retirei os produtos financeiros, pois a aplicação não recomendará nanhuma carteira de investimento ao cliente.
 
 ---
 
@@ -29,8 +28,19 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 ### Como os dados são carregados?
 > Descreva como seu agente acessa a base de conhecimento.
 
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
+Existem duas possibilidades, injetar os dados no prompt(Ctrl + C, Ctrl + V) ou carregar os arquivos via código, como no exemplo abaixo:
+"""
+import pandas as pd
+import json
 
+#CSVs
+historico = pd.read_csv('data/historico_atendimento.csv')
+transacoes = ps.read_csv('data/transacoes.csv')
+
+#JSONs
+with open('data/perfil_investidor.jason', 'r', encoding = 'utf-8') as f:
+    perfil = json.load(f)
+"""
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
 
