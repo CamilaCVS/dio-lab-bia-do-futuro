@@ -61,7 +61,7 @@ flowchart TD
 |------------|-----------|
 | Interface | Chatbot em Streamlit |
 | LLM | NotebookLM |
-| Base de Conhecimento | dados do cliente |
+| Base de Conhecimento | Dados do cliente |
 | Validação | Checagem de alucinações |
 
 ---
@@ -70,12 +70,15 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [x] Agente só responde com base nos dados fornecidos
+- [x] Respostas incluem fonte da informação
+- [x] Quando não sabe, admite e redireciona
+- [x] Recomenda o valor a ser resevado de acordo com corte de gastos 
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- [x] Agente não análisa dados que não sejam pertinentes ao orçamento do cliente. 
+- [x] Agente não faz recomendação de carteira de investimento.
+- [x] Agente não faz cálculo baseado em rendimentos de juros, somente em economias acumuladas.
+- [x] Não faz nenhuma recomendação sem analisar o perfil do cliente.
