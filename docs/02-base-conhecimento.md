@@ -98,14 +98,24 @@ data,descricao,categoria,valor,tipo
 
 > Mostre um exemplo de como os dados são formatados para o agente.
 
+O exemplo de contexto anotado abaixo, se baseia nos dados originais da base de conhecimento, mas sintetiza deixando apenas os dados mais relevantes, otimizando assim o consumo de tokens. Entretanto, vale lembrar que mais importante do que economizar tokens, é ter todas as informações relevantes disponíveis em seu contexto.
+
 ```
 Dados do Cliente:
 - Nome: João Silva
 - Perfil: Moderado
-- Saldo disponível: R$ 5.000
+- Objetivo: Consolidar reserva de emergencia
+- Renda mensal: R$ 5.000
 
 Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
-...
+- Aluguel: R$1.200
+- Supermercado:R$ 450
+- Streaming:R$ 55,90
+- Farmácia:R$ 89
+- Restaurante:R$ 120
+- Uber:R$ 45
+- Conta de Luz: R$ 180
+- Academia: R$ 99
+- Combustível: R$ 250
+- Total de saida: R$ 2488,90
 ```
