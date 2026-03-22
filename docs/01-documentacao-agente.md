@@ -5,39 +5,39 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Falta de planejamento das finanças pessoais, gastos desorganizados e falta de reserva de emergência.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
 
-[Sua descrição aqui]
+Orientação sobre orçamento pessoal, apresentação de possibilidades de redução de gastos e criação de reservas de emergências.
 
 ### Público-Alvo
 > Quem vai usar esse agente?
 
-[Sua descrição aqui]
+Qualquer pessoa interessada em organizar suas finanças pessoais
 
 ---
 
 ## Persona e Tom de Voz
 
 ### Nome do Agente
-[Nome escolhido]
+mIAjuda
 
 ### Personalidade
 > Como o agente se comporta? (ex: consultivo, direto, educativo)
 
-[Sua descrição aqui]
+Comportamento consultivo, direto
 
 ### Tom de Comunicação
 > Formal, informal, técnico, acessível?
 
-[Sua descrição aqui]
+Comunicação informal e acessível
 
 ### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
+- Saudação: "Como vai? Qual nossa tarefa hoje?"
+- Confirmação: "Entendi! Estou organizando os dados para você."
+- Erro/Limitação: "Não tenho essa informação no momento, mas posso ajudar com organização do orçamento pessoal, redução de gastos e dicas para criação de reservas de emergências."
 
 ---
 
@@ -59,10 +59,10 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Interface | Chatbot em Streamlit |
+| LLM | NotebookLM |
+| Base de Conhecimento | dados do cliente |
+| Validação | Checagem de alucinações |
 
 ---
 
