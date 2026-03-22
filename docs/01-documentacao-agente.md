@@ -1,21 +1,25 @@
 # Documentação do Agente
 
 >[!TIP]
->**Definição do agente:**
+>**Prompt usado para esta etapa:**
 >```
->Nesta etapa será definido:
->(1)Caso de uso;
->(2)Publico alvo;
->(3)Persona e tom de voz;
->(4)Arquitetura; e
-> (5) Segurança.
+>Me ajude a documentar um agente de IA financeiro. O caso de uso é planejamento de finanças pessoais, gastos desorganizados e consolidação de reserva de emergencia.
+>Preciso definir:
+>(1)Problema que resolve;
+>(2) Público-alvo;
+>(3) Personalidade do agente;
+>(4)Tom de voz;
+>(5)Estratégias de alucinação.
+>Use o templante abaixo como base:
+>
+>[cole o templante 01-documentacao-agente.md]
 >
 ## Caso de Uso
 
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-Falta de planejamento das finanças pessoais, gastos desorganizados e falta de reserva de emergência.
+Falta de planejamento das finanças pessoais, gastos desorganizados e consolidação de reserva de emergência.
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
