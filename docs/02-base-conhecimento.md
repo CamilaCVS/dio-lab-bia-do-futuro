@@ -1,5 +1,15 @@
 # Base de Conhecimento
 
+>[!TIP]
+>**Prompt sugerido para est etapa:**
+>```
+>Preciso organizar a base de conhecimento do meu orientador financeiro
+>Preciso:
+>(1)Conhcecer meu cliente para atender com maior precisão.
+>(2)Verificar a frequência em que o cliente faz investimento.
+>(3)Analisar padrão de consumo do cliente.
+>
+
 ## Dados Utilizados
 
 | Arquivo | Formato | Como o mIAjuda vai utilizar |
