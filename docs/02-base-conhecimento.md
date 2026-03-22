@@ -1,7 +1,7 @@
 # Base de Conhecimento
 
 >[!TIP]
->**Prompt sugerido para est etapa:**
+>**Prompt sugerido para esta etapa:**
 >```
 >Preciso organizar a base de conhecimento do meu orientador financeiro
 >Preciso:
